@@ -18,7 +18,7 @@ def run_guessing_game
   if answer == input.to_i
    puts "You guessed the correct number!"
    
-  elsif answer != input.to_i
+  elsif answer > input.to_i || answer < input.to_i
    puts "Sorry! The computer guessed #{answer}." 
    
  elsif input == "exit"
