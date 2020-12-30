@@ -15,13 +15,14 @@ def run_guessing_game
   ask_for_input
   input = get_input
   
-  if answer == input.to_i
+  if input == "exit"
+  puts "Goodbye!"
+  
+  elsif answer == input.to_i
    puts "You guessed the correct number!"
    
   elsif answer > input.to_i || answer < input.to_i
    puts "Sorry! The computer guessed #{answer}." 
    
- elsif input == "exit"
-  puts "Goodbye!"
 end
 end
